@@ -1,0 +1,23 @@
+$id: https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/rule.yaml
+$schema: https://json-schema.org/draft/2019-09/schema
+title: Rule
+description: Statement of a Prolog rule
+type: object
+properties:
+  type: 
+    type: string
+    const: rule
+    description: Which type of claim is being made
+  rule:
+    type: string
+    description: A Prolog statement of a logic rule which should be instantiated
+required:
+  - type
+  - rule
+examples:
+  - type: rule
+    rule: |
+      device_manufacturer_trusted(DeviceName) :- 
+        device_manufacturer(DeviceName, ManufacturerId, _ManufacturerName, _ManufacturerCreatedOn),
+        trust(TrusterId, ManufacturerId, _TrustCreatedOn),
+        user(TrusterId, _Username, _Role, _UserCreatedOn, _CanIssuePurchaseRights, _CanIssueConnectionRights, true).

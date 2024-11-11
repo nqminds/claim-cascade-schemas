@@ -1,0 +1,39 @@
+{
+  "@context": ["https://www.w3.org/ns/credentials/v2"],
+  "id": "https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/retraction.json",
+  "type": ["VerifiableCredential", "UserCredential"],
+  "issuer": "https://nqminds.example.com/issuer/ash",
+  "validFrom": "2024-11-05T17:41:33+00:00",
+  "credentialSchema": {
+      "id": "https://json-schema.org/draft/2020-12/schema",
+      "type": "JsonSchema"
+  },
+  "credentialSubject": {
+    "$id": "https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/retraction.json",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "title": "Retraction",
+    "description": "Statement of retracting a previously made claim",
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "const": "retraction",
+        "description": "Which type of claim is being made"
+      },
+      "claim_id": {
+        "type": "string",
+        "description": "id of existing claim to retract"
+      }
+    },
+    "required": [
+      "type",
+      "claim_id"
+    ],
+    "examples": [
+      {
+        "type": "retraction",
+        "claim_id": "ac068589-f711-4312-b186-bb74fbb58cc4"
+      }
+    ]
+  }
+}

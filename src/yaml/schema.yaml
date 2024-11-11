@@ -1,0 +1,22 @@
+$id: https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/schema.yaml
+$schema: https://json-schema.org/draft/2020-12/schema
+title: Core and Validation specifications meta-schema
+allOf:
+- "$ref": meta/core
+- "$ref": meta/applicator
+- "$ref": meta/unevaluated
+- "$ref": meta/validation
+- "$ref": meta/meta-data
+- "$ref": meta/format-annotation
+- "$ref": meta/content
+type:
+- object
+- boolean
+properties:
+  title:
+    type: string
+    pattern: "^[a-z_]+$"
+    description: The 'title' property must contain only lowercase letters and underscores.
+  uniqueKeys:
+    type: array
+    description: This custom field may be used to set which properties in the schema should be enforced as unique in the prolog fact base
