@@ -1,4 +1,4 @@
-$id: https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/rule.yaml
+$id: https://github.com/nqminds/claim-cascade-schemas/tree/master/src/rule.yaml
 $schema: https://json-schema.org/draft/2019-09/schema
 title: Rule
 description: Statement of a Prolog rule

@@ -1,4 +1,4 @@
-$id: https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/retraction.yaml
+$id: https://github.com/nqminds/claim-cascade-schemas/tree/master/src/retraction.yaml
 $schema: https://json-schema.org/draft/2019-09/schema
 title: Retraction
 description: Statement of retracting a previously made claim

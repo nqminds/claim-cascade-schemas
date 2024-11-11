@@ -1,6 +1,6 @@
 {
   "@context": ["https://www.w3.org/ns/credentials/v2"],
-  "id": "https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/schema.json",
+  "id": "https://github.com/nqminds/claim-cascade-schemas/tree/master/src/schema.json",
   "type": ["VerifiableCredential", "UserCredential"],
   "issuer": "https://nqminds.example.com/issuer/ash",
   "validFrom": "2024-11-05T17:41:33+00:00",
@@ -9,7 +9,7 @@
       "type": "JsonSchema"
   },
   "credentialSubject": {
-    "$id": "https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/schema.json",
+    "$id": "https://github.com/nqminds/claim-cascade-schemas/tree/master/src/schema.json",
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "title": "Core and Validation specifications meta-schema",
     "allOf": [

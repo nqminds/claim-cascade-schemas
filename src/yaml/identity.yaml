@@ -1,4 +1,4 @@
-$id: https://github.com/nqminds/ClaimCascade/tree/main/packages/schemas/src/identity.yaml
+$id: https://github.com/nqminds/claim-cascade-schemas/tree/master/src/identity.yaml
 $schema: https://json-schema.org/draft/2019-09/schema
 title: Identity
 description: Statement of an email and public key binding
